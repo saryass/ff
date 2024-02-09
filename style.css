@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    box-sizing: border-box;
+    background: #eaebecda;
+    padding-top: 98px;
+    /* to make a 20px vertical space btw (navbar-container) and (main-container) */
+}
+
+/* ******************************************************************/
+/* navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar-container {
+    /* border: 2px solid blue; */
+    background-color: #001f44;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    /* to align his elements (navbar1) and (navbar2)*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+/* ******************************************************************/
+/* navbar1   in   navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar1 {
+    /* border: 1px solid red; */
+    width: 1284px;
+    align-self: center;
+    /* to set itself horizontally at the center of (navbar-container) */
+    display: flex;
+    justify-content: flex-end;
+    /* to align his element (navbar1-language) */
+    /* border-bottom: 1px solid white; */
+}
+
+/* ******************************************************************/
+/* line-inbetween  in   navbar-container   in   BODY */
+/* *****************************************************************/
+.line-between {
+    border-top: 1px solid #777777a2;
+    opacity: 0.5;
+}
+
+.navbar1-language {
+    /* background-color: greenyellow; */
+    margin-bottom: 5px;
+    /* to make a vertical space btw itself and (line-between) */
+}
+
+.navbar1-language ul {
+    display: flex;
+}
+
+.navbar1-language li {
+    /* background-color: palevioletred; */
+    padding-right: 20px;
+    /* to make a horizontal space between the text */
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar1-language ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar1 ul li a:hover {
+    color: red;
+}
+
+/* ******************************************************************/
+/* navbar2   in   navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar2 {
+    /* border: 1px solid red; */
+    width: 1284px;
+    align-self: center;
+    /* to set itself horizontally at the center of (navbar-container) */
+    display: flex;
+    justify-content: space-between;
+    /* to align his elements (navbar2-part-A) and (navbar2-part-B)*/
+}
+
+.navbar2-part-A {
+    /* background-color: greenyellow; */
+    width: 68%;
+    height: 46px;
+}
+
+.navbar2-part-A ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-channel8-logo {
+    padding-left: 20px;
+    /* to make the horizontal space btw the logo and (سیاسەت) a bit larger */
+}
+
+.navbar2-part-A ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: 100ms;
+    padding-bottom: 8px;
+    /* to make a vertical space between the text and (border-bottom during hover over) */
+}
+
+.red:hover {
+    border-bottom: 2px solid red;
+}
+
+.light-green:hover {
+    border-bottom: 2px solid lightgreen;
+}
+
+.yellow:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.grey:hover {
+    border-bottom: 2px solid rgb(199, 196, 196);
+}
+
+.green:hover {
+    border-bottom: 2px solid green;
+}
+
+.white:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar2-part-B {
+    /* border: 1px solid black; */
+    width: 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-icon {
+    color: white
+}
+
+.fa-magnifying-glass {
+    padding-left: 15px;
+}
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+@media screen and (max-width:480px) {
+    
+.line-between {
+    display: none;
+}
+
+.NA {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+.navbar1 {
+    /* border: 1px solid red; */
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+.navbar2 {
+    /* border: 1px solid red; */
+    width: fit-content;
+    justify-content: center;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.navbar1-language {
+    margin-bottom: 0;
+    /* it was 5px */
+    /* to make a vertical space btw itself and (line-between) */
+}
+
+.navbar2-part-A {
+    /* background-color: greenyellow; */
+    width: fit-content;
+    height: fit-content;
+}
+
+#navbar-channel8-logo {
+    padding: 0;
+}
+
+.channel8-logo-resize {
+    width: 36px;
+    height: 36px;
+}
+
+}
